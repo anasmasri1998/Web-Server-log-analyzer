@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-server-log-analyzer"
+version = "1.0.0"
+description = "Beginner-friendly Apache and Nginx access-log analyzer CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[project.scripts]
+weblog = "log_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["log_analyzer*"]
